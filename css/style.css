@@ -175,6 +175,9 @@ body {
     background-color: var(--color-gray-light-2); }
   .user-nav__icon-box {
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .user-nav__icon-box {
+        height: 100%; } }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
@@ -196,6 +199,81 @@ body {
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 1rem; }
+  .user-nav__pin-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 0rem;
+    height: auto;
+    width: 35rem;
+    background-color: var(--color-gray-light-2);
+    position: absolute;
+    top: 7rem;
+    left: -17.25rem;
+    border-radius: 0 0 0 1.2rem;
+    box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.25);
+    transition: all .5s;
+    z-index: 50; }
+    @media only screen and (max-width: 56.25em) {
+      .user-nav__pin-box {
+        top: 3.5rem;
+        left: -16rem;
+        border-radius: 0 0 1.2rem 1.2rem; } }
+  .user-nav__icon-box:hover .user-nav__pin-box {
+    max-height: 20rem; }
+  .user-nav__pin-msg {
+    display: flex;
+    flex-direction: row; }
+    .user-nav__pin-msg__msg-paragraph {
+      display: flex;
+      flex-direction: column; }
+    .user-nav__pin-msg img {
+      box-sizing: content-box;
+      height: 6rem;
+      width: 6rem;
+      padding: .25rem .5rem;
+      border-radius: 50%; }
+    .user-nav__pin-msg__msg-from {
+      font-weight: 600; }
+    .user-nav__pin-msg__msg-content {
+      font-size: 1.2rem; }
+  .user-nav__msg-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    height: auto;
+    width: 35rem;
+    background-color: var(--color-gray-light-2);
+    position: absolute;
+    top: 7rem;
+    left: -17.25rem;
+    border-radius: 0 0 0 1.2rem;
+    box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.25);
+    transition: all .5s;
+    z-index: 50; }
+    @media only screen and (max-width: 56.25em) {
+      .user-nav__msg-box {
+        top: 3.5rem;
+        border-radius: 1.2rem 0 0 1.2rem; } }
+  .user-nav__icon-box:hover .user-nav__msg-box {
+    max-height: 20rem; }
+  .user-nav__user-msg {
+    display: flex;
+    flex-direction: row; }
+    .user-nav__user-msg__msg-paragraph {
+      display: flex;
+      flex-direction: column; }
+    .user-nav__user-msg img {
+      box-sizing: content-box;
+      height: 6rem;
+      width: 6rem;
+      padding: .25rem .5rem;
+      border-radius: 50%; }
+    .user-nav__user-msg__msg-from {
+      font-weight: 600; }
+    .user-nav__user-msg__msg-content {
+      font-size: 1.2rem; }
 
 .side-nav {
   font-size: 1.4rem;
